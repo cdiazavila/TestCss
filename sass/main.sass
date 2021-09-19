@@ -1,0 +1,253 @@
+$color1: #1f1b2e
+$color_hover: #52f321
+
+body
+    background: #f2f2f2
+header
+    background: $color1
+    color: #fff
+    justify-content: center
+    align-content: center
+    min-height: 70px
+    margin: auto
+    box-shadow: 0px 1px 2px black
+
+    h1 
+        float: left
+        margin-left: 5%
+        text-shadow: 2px 3px 4px black
+        font-size: calc(1em + 1vw)
+        margin-top: 19px
+        letter-spacing: 2px
+        text-shadow: 2px 2px 2px #e02932
+    img 
+        width: 7%
+        min-height: 40px
+
+    nav
+        margin-top: 18px
+        width: 100%
+        padding: 5px
+        p
+            margin-right: 10px  
+            text-align: right 
+            letter-spacing: 2px
+               
+                
+.main
+    background:#eeeded
+    box-shadow: 0px 1px 2px black
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    min-height: 86vh
+    padding: 0
+   
+
+    article
+        padding: 20px
+        .pag
+            display: none
+        .contPreguntas
+            display: none
+            width: 80%
+            margin: 90%
+            background: #f3f3f3
+            padding: 30px
+            border: 1px solid rgba(0,0,0,0.2 )
+            min-height: 200px
+            margin: auto
+            .indicador
+                display: none
+        .controles
+            margin: auto
+            width: 80%
+            max-width: 85%
+            display: none
+            min-height: 30vh
+            
+            .back 
+                float: left
+                display: block
+                padding: 1%
+                width: 8%
+                min-width:50px 
+                margin: 30px 0px
+                background: #1f1b2e
+                color: white
+                border: 0
+                opacity: 1
+                border-radius: 5px 5px
+            
+            .next
+                float: right
+                display: block
+                padding: 1%
+                min-width:50px 
+                width: 8%
+                margin: 30px 0px
+                background: #1f1b2e
+                color: white
+                border: 0
+                opacity: 1
+                border-radius: 5px 5px
+          
+            .terminar
+                float: right
+                display: none
+                padding: 10px
+                width: 20%
+                min-width: 70px
+                margin: 30px 0px
+                background: #1f1b2e
+                color: white
+                border: 0
+                opacity: 1
+                border-radius: 5px 5px
+            
+            button:hover
+                 opacity: 0.8
+        .welcome
+            display: none
+            text-align: center
+            width: 80%
+            margin: 90%
+            background: #f3f3f3
+            padding: 30px
+            border: 1px solid rgba(0,0,0,0.2 )
+            min-height: 400px
+            margin: auto
+            margin-top: 100px
+            button
+                display: block
+                padding: 10px
+                width: 40%
+                margin: 30px 0px
+                font-size: 20px
+                background: #1f1b2e
+                color: white
+                border: 0
+                opacity: 1
+                border-radius: 5px 5px
+                margin: auto
+                margin-top: 25px
+            button:hover
+                opacity: 0.8
+        .login
+            margin: auto
+            margin-top: 120px
+            width: 50%
+            max-width: 500px
+            background: #f3f3f3
+            padding: 30px
+            border: 1px solid rgba(0,0,0,0.2 )
+            h2
+                text-align: center
+                margin-bottom: 20px
+                color: rgba(0,0,0,0.5 )
+            input[type="text"]
+                display: block
+                padding: 10px
+                width: 100%
+                margin: 30px 0px
+                font-size: 20px
+            button
+                display: block
+                padding: 10px
+                width: 100%
+                margin: 30px 0px
+                font-size: 20px
+                background: #1f1b2e
+                color: white
+                border: 0
+                opacity: 1
+                border-radius: 5px 5px
+                
+            button:hover
+                 opacity: 0.8
+
+        .pRealizadas
+                display: block
+                margin: auto
+                width: 80%
+                text-align: center
+                margin-bottom: 50px
+        .items
+            min-height: 45px
+            margin-top: 120px
+            justify-content: center
+            align-items: center
+            display: none
+            width: 80%
+            margin: auto
+            max-width: 85%   
+            .item
+               width: 8%
+               min-width: 25px
+               height:40px
+               margin: 2px
+               text-decoration: none
+               border: 1px solid gray
+                // margin: 30px 0px
+                // font-size: 20px
+                 
+
+            .item:hover
+               background: rgba(0,0,0,0.2 )
+               transition: all .4s linear
+
+    .aside
+        display: none
+        color: #fff
+        padding-top: 20px
+        min-height: 90vh
+
+        article
+            background: #195f2f
+            margin-bottom: 30px
+            min-height: 23vh
+
+            .tittle
+                  background-image: linear-gradient(to right, #17c970 , #ffffff)
+                  width: 100%
+                  min-height: 30px
+                  padding-left: 5px
+                  padding-top: 0.5px
+
+                  h4
+                    text-shadow: 2px 3px 4px black
+footer
+    background: #ebe9e9
+    color: #0000
+    text-align: center
+    box-shadow: 0px 1px 2px black
+    h5
+        color: #000
+.container
+        margin: auto
+        width: 95%
+
+
+@media screen and ( max-width: 768px )
+    .main
+        article
+            .login
+                width: 90%
+                margin-top: 20px
+            .controles
+                 width: 90%
+            .items
+                 width: 90%
+
+@media screen and ( max-width: 360px )
+    .main
+        article
+            .login
+               width: 100%
+               margin-top: 20px
+            .controles
+                 width: 100%
+            .items
+                 width: 100%
+    
